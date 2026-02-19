@@ -165,26 +165,10 @@
   }
 }
 
-/*
- * Full viewport height for iOS Safari: use dvh so content adapts when toolbar is visible.
- * @see https://sabhya.dev/handling-ios-safari-toolbar-for-full-height-web-content
- */
-.full-viewport-height {
-  height: 100vh;
-}
-@supports (height: 100dvh) {
-  .full-viewport-height {
-    height: 100dvh;
-  }
-}
-
-.min-full-viewport-height {
-  min-height: 100vh;
-}
-@supports (min-height: 100dvh) {
-  .min-full-viewport-height {
-    min-height: 100dvh;
-  }
+/* Full-screen section: min-height so content can expand, safe-area so nothing sits under iOS bar */
+.full-screen {
+  min-height: 100dvh;
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 /* Improves text legibility on busy/dither backgrounds */
