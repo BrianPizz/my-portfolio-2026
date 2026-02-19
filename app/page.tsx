@@ -1,15 +1,18 @@
 import Hero from "@/components/Hero";
-import Dither from "@/components/Dither";
+import DitherWithColorPicker from "@/components/DitherWithColorPicker";
 import Nav from "@/components/Nav";
 import About from "@/components/About";
+import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
+import Resume from "@/components/Resume";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <div className="min-h-full w-full">
       <div className="fixed inset-0 z-0 w-full h-full">
-        <Dither />
+        <DitherWithColorPicker />
       </div>
       <Nav />
       <div className="relative z-10 w-full min-h-screen flex flex-col">
@@ -17,8 +20,11 @@ export default function Home() {
           <Hero />
         </section>
         <About />
+        <Skills />
         <Projects />
+        <Resume />
         <Contact />
+        <Footer />
       </div>
     </div>
   );

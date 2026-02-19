@@ -10,7 +10,7 @@ const Hero = () => {
             <SplitText
               text="Brian Pizzimenti"
               tag="h1"
-              className="text-7xl md:text-9xl font-bold text-white tracking-tight overflow-hidden"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold text-white tracking-tight max-w-[90vw] mx-auto overflow-hidden"
               splitType="chars"
               delay={40}
               duration={1}

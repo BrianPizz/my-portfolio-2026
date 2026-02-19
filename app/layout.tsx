@@ -9,8 +9,16 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Brian's Portfolio",
-  description: "Modern & Unique React Portfolio",
+  title: "Brian Pizzimenti | Full Stack Developer",
+  description: "Modern & Unique React Portfolio for Brian Pizzimenti",
+  keywords: ["Brian Pizzimenti", "Full Stack Developer", "React", "Next.js", "Node.js", "Python", "SQL", "AWS", "Handlebars.js", "HTML & CSS", "Tailwind CSS", "Git"],
+  authors: [{ name: "Brian Pizzimenti", url: "https://brianpizzimenti.com" }],
+  creator: "Brian Pizzimenti",
+  publisher: "Brian Pizzimenti",
+  openGraph: {
+    title: "Brian Pizzimenti | Full Stack Developer",
+    description: "Modern & Unique React Portfolio for Brian Pizzimenti",
+  },
 };
 
 export default function RootLayout({
