@@ -25,7 +25,7 @@ const PRESETS: { name: string; hex: string }[] = [
   { name: "Neutral", hex: "#525252" },
 ];
 
-const DEFAULT_HEX = "#64748b";
+const DEFAULT_HEX = "#1e3a5f";
 
 export default function DitherWithColorPicker() {
   const [hex, setHex] = useState(DEFAULT_HEX);
