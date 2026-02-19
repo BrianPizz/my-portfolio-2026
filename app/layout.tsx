@@ -8,16 +8,65 @@ const syne = Syne({
   display: "swap",
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://brianpizzimenti.com";
+
 export const metadata: Metadata = {
-  title: "Brian Pizzimenti | Full Stack Developer",
-  description: "Modern & Unique React Portfolio for Brian Pizzimenti",
-  keywords: ["Brian Pizzimenti", "Full Stack Developer", "React", "Next.js", "Node.js", "Python", "SQL", "AWS", "Handlebars.js", "HTML & CSS", "Tailwind CSS", "Git"],
-  authors: [{ name: "Brian Pizzimenti", url: "https://brianpizzimenti.com" }],
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Brian Pizzimenti | Full Stack Developer",
+    template: "%s | Brian Pizzimenti",
+  },
+  description:
+    "Full stack developer portfolio. React, Next.js, Node.js, Python & SQL. Projects, resume, and contact.",
+  keywords: [
+    "Brian Pizzimenti",
+    "Full Stack Developer",
+    "React",
+    "Next.js",
+    "Node.js",
+    "Python",
+    "SQL",
+    "MongoDB",
+    "portfolio",
+    "web developer",
+  ],
+  authors: [{ name: "Brian Pizzimenti", url: siteUrl }],
   creator: "Brian Pizzimenti",
   publisher: "Brian Pizzimenti",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   openGraph: {
+    type: "website",
+    url: siteUrl,
+    siteName: "Brian Pizzimenti",
     title: "Brian Pizzimenti | Full Stack Developer",
-    description: "Modern & Unique React Portfolio for Brian Pizzimenti",
+    description:
+      "Full stack developer portfolio. React, Next.js, Node.js, Python & SQL. Projects, resume, and contact.",
+    locale: "en_US",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Brian Pizzimenti - Full Stack Developer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Brian Pizzimenti | Full Stack Developer",
+    description:
+      "Full stack developer portfolio. React, Next.js, Node.js, Python & SQL.",
+    images: ["/og.png"],
+  },
+  alternates: {
+    canonical: siteUrl,
   },
 };
 

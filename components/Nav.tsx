@@ -31,7 +31,7 @@ const Nav = () => {
           <button
             type="button"
             onClick={scrollToTop}
-            className="text-white text-lg font-semibold tracking-tight hover:text-gray-200 transition-colors bg-transparent border-0 cursor-pointer p-0"
+            className="text-white text-lg font-semibold tracking-tight hover:text-gray-200 transition-colors bg-transparent border-0 cursor-pointer p-0 font-[family-name:var(--font-heading)]"
             aria-label="Scroll to top"
           >
             BP
@@ -39,7 +39,7 @@ const Nav = () => {
         ) : (
           <Link
             href="/"
-            className="text-white text-lg font-semibold tracking-tight hover:text-gray-200 transition-colors"
+            className="text-white text-lg font-semibold tracking-tight hover:text-gray-200 transition-colors font-[family-name:var(--font-heading)]"
           >
             BP
           </Link>

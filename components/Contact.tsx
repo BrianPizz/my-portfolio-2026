@@ -43,7 +43,7 @@ const Contact = () => {
       className="relative z-10 w-full px-4 sm:px-6 lg:px-8 py-20 md:py-28 border-t border-white/10"
     >
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight text-center font-[family-name:var(--font-heading)]">
           Get in touch
         </h2>
         <p className="text-white/90 text-xl mb-12 text-readable text-center">

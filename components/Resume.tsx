@@ -7,7 +7,7 @@ const Resume = () => {
       className="relative z-10 w-full px-4 sm:px-6 lg:px-8 py-20 md:py-28 border-t border-white/10"
     >
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight font-[family-name:var(--font-heading)]">
           Resume
         </h2>
         <p className="text-white/90 text-xl mb-10 text-readable">

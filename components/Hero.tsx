@@ -10,7 +10,7 @@ const Hero = () => {
             <SplitText
               text="Brian Pizzimenti"
               tag="h1"
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold text-white tracking-tight max-w-[90vw] mx-auto overflow-hidden"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold text-white tracking-tight max-w-[90vw] mx-auto overflow-hidden font-[family-name:var(--font-display)]"
               splitType="chars"
               delay={40}
               duration={1}
@@ -18,8 +18,15 @@ const Hero = () => {
               from={{ opacity: 0, y: 50 }}
               to={{ opacity: 1, y: 0 }}
             />
-            <p className="text-2xl md:text-3xl text-white/90 max-w-2xl mx-auto text-readable mt-6">
+            <p className="text-2xl md:text-3xl text-white/90 max-w-2xl mx-auto text-readable mt-6 font-[family-name:var(--font-heading)]">
               Full Stack Developer
+            </p>
+            <p className="text-white/80 text-base sm:text-lg mt-4 text-readable font-[family-name:var(--font-heading)]">
+              (440) 503-5647 ·{" "}
+              <a href="mailto:bpizzimentijr@outlook.com" className="text-white/90 hover:text-white underline underline-offset-2 transition-colors">
+                bpizzimentijr@outlook.com
+              </a>
+              {" · "}Orlando, FL
             </p>
         </div>
         <a

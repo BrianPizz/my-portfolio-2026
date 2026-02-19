@@ -6,7 +6,7 @@ const About = () => {
     >
       <div className="max-w-3xl mx-auto">
         <div className="rounded-2xl border border-white/10 bg-black/50 backdrop-blur-md px-6 py-8 sm:px-10 sm:py-10 md:px-12 md:py-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 tracking-tight text-readable-strong">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 tracking-tight text-readable-strong font-[family-name:var(--font-heading)]">
             About
           </h2>
           <div className="space-y-5 text-white text-xl leading-relaxed text-readable-strong">

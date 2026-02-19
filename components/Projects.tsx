@@ -8,7 +8,7 @@ const Projects = () => {
       className="relative z-10 w-full px-4 sm:px-6 lg:px-8 py-20 md:py-28"
     >
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight font-[family-name:var(--font-heading)]">
           Projects
         </h2>
         <p className="text-white/90 text-xl mb-14 max-w-2xl text-readable">
@@ -30,7 +30,7 @@ const Projects = () => {
                   />
                 </div>
                 <div className="flex flex-1 flex-col p-5 md:p-6">
-                  <h3 className="text-2xl font-semibold text-white mb-3 tracking-tight">
+                  <h3 className="text-2xl font-semibold text-white mb-3 tracking-tight font-[family-name:var(--font-heading)]">
                     {project.title}
                   </h3>
                   <p className="text-white/85 text-base leading-relaxed mb-4 flex-1 line-clamp-3 text-readable">
