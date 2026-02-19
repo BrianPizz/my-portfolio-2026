@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     title: "Brian Pizzimenti | Full Stack Developer",
     description:
       "Full stack developer portfolio. React, Next.js, Node.js, Python & SQL.",
-    images: ["/og.png"],
+    images: ["assets/images/og.png"],
   },
   alternates: {
     canonical: siteUrl,
