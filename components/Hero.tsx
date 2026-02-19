@@ -6,7 +6,7 @@ import SplitText from "./SplitText";
 
 const Hero = () => {
   return (
-    <div className="relative z-10 min-h-screen flex flex-col">
+    <div className="relative z-10 min-full-viewport-height flex flex-col">
         <div className="flex-1 flex flex-col justify-center items-center text-center pt-24 pb-12">
             <SplitText
               text="Brian Pizzimenti"
