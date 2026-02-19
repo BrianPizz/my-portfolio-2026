@@ -83,6 +83,43 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      url: siteUrl,
+      name: "Brian Pizzimenti | Full Stack Developer",
+      description:
+        "Full stack developer portfolio. React, Next.js, Node.js, Python & SQL. Projects, resume, and contact.",
+      publisher: { "@id": `${siteUrl}/#person` },
+    },
+    {
+      "@type": "Person",
+      "@id": `${siteUrl}/#person`,
+      name: "Brian Pizzimenti",
+      jobTitle: "Full Stack Developer",
+      url: siteUrl,
+      description:
+        "Full-stack developer. React, Node, Python, SQL. Orlando, FL. Open to full-time and contract opportunities.",
+      sameAs: [
+        "https://www.linkedin.com/in/brian-pizzimenti-b1a53929a/",
+        "https://github.com/BrianPizz",
+      ],
+      knowsAbout: [
+        "React",
+        "Next.js",
+        "Node.js",
+        "Python",
+        "SQL",
+        "JavaScript",
+        "TypeScript",
+      ],
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -91,6 +128,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={syne.variable}>
       <body className="font-sans antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {children}
       </body>
     </html>
