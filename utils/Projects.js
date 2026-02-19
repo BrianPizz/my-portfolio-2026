@@ -1,7 +1,7 @@
 const projects = [
     {
         id: 1,
-        title: 'Employ-Ease',
+        title: 'Employ Ease',
         description: 'A practical and effective tool to help users find careers. EmployEase sorts job applications into an easily manageable and trackable job board.',
         tech1: 'React',
         tech2: 'MongoDB',
@@ -32,7 +32,7 @@ const projects = [
     {
         id: 4,
         title: 'Ohio Special Education Report Scanner ',
-        description: 'Made for educational directors, this app automates monthly report tracking. Taking information from over 40+ schools and generating one clean document.',
+        description: 'Made for educational directors, this app automates monthly enrollment tracking. Taking information from over 40+ schools and generating one clean document.',
         tech1: 'Python',
         tech2: 'pytesseract',
         codeLink: 'https://github.com/BrianPizz/monthly-report-scraper',
