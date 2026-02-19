@@ -158,8 +158,17 @@
   html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    min-height: 100%;
+    min-height: 100dvh;
+    min-height: -webkit-fill-available;
     overflow-x: hidden;
+    /* Safe area for notched iPhones */
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+  body {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
   }
 }
 
