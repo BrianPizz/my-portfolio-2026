@@ -6,6 +6,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
+  themeColor: "#15181e",
 };
 
 const syne = Syne({

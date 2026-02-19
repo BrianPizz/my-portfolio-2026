@@ -11,10 +11,8 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <div className="w-full">
-      <div className="fixed inset-0 z-0 w-full bg-black">
-        <div className="absolute inset-0">
-          <DitherWithColorPicker />
-        </div>
+      <div className="fixed inset-0 z-0 w-full bg-[#15181e]">
+        <DitherWithColorPicker />
       </div>
       <Nav />
       <div className="relative z-10 w-full flex flex-col">
