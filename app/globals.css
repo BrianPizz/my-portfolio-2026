@@ -165,12 +165,6 @@
   }
 }
 
-/* Full-screen section: min-height so content can expand, safe-area so nothing sits under iOS bar */
-.full-screen {
-  min-height: 100dvh;
-  padding-bottom: env(safe-area-inset-bottom);
-}
-
 /* Improves text legibility on busy/dither backgrounds */
 .text-readable {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
