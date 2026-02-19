@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ExternalLink, Code } from "lucide-react";
 import projects from "@/utils/Projects.js";
 
 const Projects = () => {
@@ -49,16 +50,18 @@ const Projects = () => {
                       href={project.demoLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center rounded-lg bg-white text-gray-900 px-5 py-2.5 text-base font-medium transition-colors hover:bg-gray-200"
+                      className="inline-flex items-center gap-2 rounded-lg bg-white text-gray-900 px-5 py-2.5 text-base font-medium transition-colors hover:bg-gray-200"
                     >
+                      <ExternalLink className="w-4 h-4" />
                       Live demo
                     </Link>
                     <Link
                       href={project.codeLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center rounded-lg border border-white/30 bg-transparent px-5 py-2.5 text-base font-medium text-white transition-colors hover:bg-white/10"
+                      className="inline-flex items-center gap-2 rounded-lg border border-white/30 bg-transparent px-5 py-2.5 text-base font-medium text-white transition-colors hover:bg-white/10"
                     >
+                      <Code className="w-4 h-4" />
                       Code
                     </Link>
                   </div>

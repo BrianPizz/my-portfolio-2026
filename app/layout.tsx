@@ -68,6 +68,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteUrl,
   },
+  icons: {
+    icon: [
+      { url: "/icon.svg", media: "(prefers-color-scheme: light)" },
+      { url: "/icon-dark.svg", media: "(prefers-color-scheme: dark)" },
+    ],
+  },
 };
 
 export default function RootLayout({

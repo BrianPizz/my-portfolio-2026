@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import SplitText from "./SplitText";
 
 const Hero = () => {
@@ -21,13 +22,20 @@ const Hero = () => {
             <p className="text-2xl md:text-3xl text-white/90 max-w-2xl mx-auto text-readable mt-6 font-[family-name:var(--font-heading)]">
               Full Stack Developer
             </p>
-            <p className="text-white/80 text-base sm:text-lg mt-4 text-readable font-[family-name:var(--font-heading)]">
-              (440) 503-5647 ·{" "}
-              <a href="mailto:bpizzimentijr@outlook.com" className="text-white/90 hover:text-white underline underline-offset-2 transition-colors">
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-4 text-white/80 text-base sm:text-lg text-readable font-[family-name:var(--font-heading)]">
+              <span className="inline-flex items-center gap-2">
+                <Phone className="w-4 h-4 shrink-0" aria-hidden />
+                (440) 503-5647
+              </span>
+              <a href="mailto:bpizzimentijr@outlook.com" className="inline-flex items-center gap-2 text-white/90 hover:text-white underline underline-offset-2 transition-colors">
+                <Mail className="w-4 h-4 shrink-0" aria-hidden />
                 bpizzimentijr@outlook.com
               </a>
-              {" · "}Orlando, FL
-            </p>
+              <span className="inline-flex items-center gap-2">
+                <MapPin className="w-4 h-4 shrink-0" aria-hidden />
+                Orlando, FL
+              </span>
+            </div>
         </div>
         <a
           href="#projects"

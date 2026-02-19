@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Linkedin, Github } from "lucide-react";
 
 const FORMSPREE_ENDPOINT =
   process.env.NEXT_PUBLIC_FORMSPREE_ID &&
@@ -133,7 +134,9 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-lg border border-white/30 bg-transparent px-6 py-3.5 text-base font-medium text-white transition-colors hover:bg-white/10"
+            aria-label="LinkedIn"
           >
+            <Linkedin className="w-5 h-5" />
             LinkedIn
           </a>
           <a
@@ -141,7 +144,9 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-lg border border-white/30 bg-transparent px-6 py-3.5 text-base font-medium text-white transition-colors hover:bg-white/10"
+            aria-label="GitHub"
           >
+            <Github className="w-5 h-5" />
             GitHub
           </a>
         </div>
