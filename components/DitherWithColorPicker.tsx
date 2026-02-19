@@ -55,8 +55,8 @@ export default function DitherWithColorPicker() {
 
   const pickerUI = (
     <div
-      className="fixed z-[100] flex flex-col items-end gap-2"
-      style={{ pointerEvents: "auto", bottom: "calc(1.5rem + env(safe-area-inset-bottom))", right: "max(1rem, env(safe-area-inset-right))" }}
+      className="fixed bottom-6 right-6 z-[100] flex flex-col items-end gap-2"
+      style={{ pointerEvents: "auto" }}
     >
       {isOpen && (
         <div className="rounded-2xl border border-white/10 bg-black/50 backdrop-blur-md p-4 shadow-xl">

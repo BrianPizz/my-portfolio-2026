@@ -146,34 +146,22 @@
 }
 
 @layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
   * {
     @apply border-border outline-ring/50;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
   html {
     scroll-behavior: smooth;
-    height: 100%;
-    min-height: 100%;
-    min-height: 100dvh;
-    min-height: -webkit-fill-available;
-    overflow-x: clip;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    width: 100%;
   }
   body {
     margin: 0;
     padding: 0;
-    min-height: 100%;
-    min-height: 100dvh;
-    min-height: -webkit-fill-available;
-    height: auto;
-    overflow-x: clip;
-    overflow-y: visible;
-    width: 100%;
-    max-width: 100%;
+    @apply bg-background text-foreground;
+    overflow-x: hidden;
   }
 }
 

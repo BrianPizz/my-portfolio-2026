@@ -5,8 +5,6 @@ import "./globals.css";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  viewportFit: "cover",
-  interactiveWidget: "resizes-visual",
 };
 
 const syne = Syne({
