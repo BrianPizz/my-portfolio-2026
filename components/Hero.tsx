@@ -6,7 +6,7 @@ import SplitText from "./SplitText";
 
 const Hero = () => {
   return (
-    <div className="relative z-10 min-h-screen flex flex-col">
+    <div className="relative z-10 min-h-[100dvh] flex flex-col">
         <div className="flex-1 flex flex-col justify-center items-center text-center pt-24 pb-12">
             <SplitText
               text="Brian Pizzimenti"
@@ -22,14 +22,14 @@ const Hero = () => {
             <p className="text-2xl md:text-3xl text-white/90 max-w-2xl mx-auto text-readable mt-6 font-[family-name:var(--font-heading)]">
               Full Stack Developer
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-4 text-white/80 text-base sm:text-lg text-readable font-[family-name:var(--font-heading)]">
-              <span className="inline-flex items-center gap-2">
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-4 text-white/80 text-base sm:text-lg text-readable font-[family-name:var(--font-heading)] max-w-[min(100%,90vw)]">
+              <span className="inline-flex items-center gap-2 shrink-0">
                 <Phone className="w-4 h-4 shrink-0" aria-hidden />
                 (440) 503-5647
               </span>
-              <a href="mailto:bpizzimentijr@outlook.com" className="inline-flex items-center gap-2 text-white/90 hover:text-white underline underline-offset-2 transition-colors">
+              <a href="mailto:bpizzimentijr@outlook.com" className="inline-flex items-center gap-2 text-white/90 hover:text-white underline underline-offset-2 transition-colors break-all min-w-0">
                 <Mail className="w-4 h-4 shrink-0" aria-hidden />
-                bpizzimentijr@outlook.com
+                <span className="break-all">bpizzimentijr@outlook.com</span>
               </a>
               <span className="inline-flex items-center gap-2">
                 <MapPin className="w-4 h-4 shrink-0" aria-hidden />
