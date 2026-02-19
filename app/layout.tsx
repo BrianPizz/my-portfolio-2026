@@ -5,8 +5,6 @@ import "./globals.css";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  viewportFit: "cover",
-  interactiveWidget: "resizes-visual",
 };
 
 const syne = Syne({
@@ -90,7 +88,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={syne.variable}>
-      <body className="font-sans antialiased min-h-full overflow-hidden">
+      <body className="font-sans antialiased min-h-full">
         {children}
       </body>
     </html>
