@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/og.png",
+        url: `${siteUrl}/og.png`,
         width: 1200,
         height: 630,
         alt: "Brian Pizzimenti - Full Stack Developer",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     title: "Brian Pizzimenti | Full Stack Developer",
     description:
       "Full stack developer portfolio. React, Next.js, Node.js, Python & SQL.",
-    images: ["assets/images/og.png"],
+    images: [`${siteUrl}/og.png`],
   },
   alternates: {
     canonical: siteUrl,
