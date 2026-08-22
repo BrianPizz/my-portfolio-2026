@@ -1,5 +1,15 @@
 const projects = [
     {
+        id: 5,
+        title: 'Heat Seat',
+        description: 'A user friendly tool for teachers to track student engagement and behavior in the classroom.',
+        tech1: 'React',
+        tech2: 'Supabase',
+        codeLink: 'https://github.com/BrianPizz/heat-seat',
+        demoLink: 'https://heatseatedu.com/',
+        imageLink: '/assets/images/heatseat.png',
+    },
+    {
         id: 1,
         title: 'Employ Ease',
         description: 'A practical and effective tool to help users find careers. EmployEase sorts job applications into an easily manageable and trackable job board.',
